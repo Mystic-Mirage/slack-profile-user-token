@@ -254,7 +254,7 @@ class Slack {
           "type": "section",
           "text": {
             "type": "mrkdwn",
-            "text": "```curl -H \"Content-Type: application/json\" -d '{\"profile\": {\"status_text\": \"test\"}}' -H \"Authorization: Bearer <your_token>\" https://slack.com/api/users.profile.set```"
+            "text": "```curl -H \"Content-Type: application/json; charset=utf-8\" -d '{\"profile\": {\"status_text\": \"test\"}}' -H \"Authorization: Bearer <your_token>\" https://slack.com/api/users.profile.set```"
           }
         },
         {
