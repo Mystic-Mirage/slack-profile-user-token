@@ -320,7 +320,7 @@ class Slack {
           "type": "section",
           "text": {
             "type": "mrkdwn",
-            "text": "_*Beware!* This token allows you to update all your profile info and not limited only to your status_"
+            "text": "_*Beware!* This token allows you to update all your profile info and is *NOT* limited exclusively to your status_"
           }
         },
         {
