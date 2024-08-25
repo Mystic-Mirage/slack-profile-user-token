@@ -1,3 +1,6 @@
+/**
+ * Working with Slack API
+ */
 class Slack {
   constructor() {
     const props = PropertiesService.getScriptProperties().getProperties();
@@ -232,6 +235,11 @@ class Slack {
     this.post(responseUrl, {delete_original: true});
   }
 
+  /**
+   * Post home tab content for a user
+   *
+   * @param {string} userId
+   */
   publishHome(userId) {
     const view = {
       "type": "home",
