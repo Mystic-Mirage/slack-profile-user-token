@@ -324,6 +324,13 @@ class Slack {
           }
         },
         {
+          "type": "section",
+          "text": {
+            "type": "mrkdwn",
+            "text": "Source code: <https://github.com/Mystic-Mirage/slack-profile-user-token>"
+          }
+        },
+        {
           "type": "actions",
           "elements": [
             {
