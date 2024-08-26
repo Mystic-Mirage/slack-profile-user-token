@@ -1,3 +1,13 @@
+/**
+ * Process authorization request
+ * 1. Take a `code` parameter value from the request
+ * 2. Use it to get a user token
+ * 3. Delete all messages from user's DM
+ * 4. Send a message with user's token to user
+ *
+ * @param {Events.DoGet} e
+ * @returns {HTML.HtmlOutput | Content.TextOutput}
+ */
 function doGet(e) {
   if (e.parameter.code) {
     const slack = new Slack();
