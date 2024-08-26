@@ -242,7 +242,7 @@ class Slack {
    * @param {string} userId
    */
   publishHome(userId) {
-    const userScopeEncoded = encodeURI("users.profile:read,users.profile:write");
+    const userScopeEncoded = encodeURI("users:read,users:write,users.profile:read,users.profile:write");
     const redirectUrlEncoded = encodeURI(ScriptApp.getService().getUrl());
     const view = {
       "type": "home",
