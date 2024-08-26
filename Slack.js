@@ -241,6 +241,7 @@ class Slack {
    * @param {string} userId
    */
   publishHome(userId) {
+    const redirectUrlEncoded = encodeURI(ScriptApp.getService().getUrl());
     const view = {
       "type": "home",
       "blocks": [
@@ -348,7 +349,7 @@ class Slack {
                 "text": "Authorize"
               },
               "style": "primary",
-              "url": "https://slack.com/oauth/v2/authorize?scope=&user_scope=users.profile%3Aread%2Cusers.profile%3Awrite&redirect_uri=https%3A%2F%2Fscript.google.com%2Fmacros%2Fs%2FAKfycbzD5YFBntvlb3D51USQ7TlTqU-Y1eNraoSW0sjdSiCcjgxir_M-2biu6WsgYNUW0NDPig%2Fexec&client_id=5169344518.7637860129361"
+              "url": `https://slack.com/oauth/v2/authorize?user_scope=users.profile%3Aread%2Cusers.profile%3Awrite&redirect_uri=${redirectUrlEncoded}&client_id=${this.clientId}`
             }
           ]
         }
