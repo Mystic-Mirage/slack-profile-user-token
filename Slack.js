@@ -167,7 +167,7 @@ class Slack {
    * Authorize an OAuth 2.0 request
    *
    * @param {string} code
-   * @returns {{authed_user: {id: string, access_token: string}}}
+   * @returns {{authed_user: {id: string, access_token: string}, error?: string}}
    */
   oAuthV2Access(code) {
     const data = {
