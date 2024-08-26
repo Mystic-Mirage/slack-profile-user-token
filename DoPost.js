@@ -32,7 +32,7 @@ function doPost(e) {
 
     /** @type {
      * {type: "url_verification", challenge: string} |
-     * {type: "event_callback", event: {type: "app_home_opened", user: string}}
+     * {type: "event_callback", event: {type: string, user: string}}
      * }
      */
     const contents = JSON.parse(e.postData.contents);
