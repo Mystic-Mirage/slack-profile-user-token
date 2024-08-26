@@ -12,14 +12,13 @@ function doPost(e) {
      * Process message buttons (just "Revoke" for now)
      */
 
-    /** @type {{actions: {action_id: string}[], response_url: string}} */
+    /** @type {{actions: {action_id: string, value: string}[], response_url: string}} */
     const payload = JSON.parse(e.parameter.payload);
     console.log(payload);
 
     for (const action of payload.actions) {
       if (action.action_id === "revoke") {
         const slack = new Slack();
-        /** @type {{revoked: boolean, error?: string }} */
         const result = slack.authRevoke(action.value);
         if (result.revoked || result.error === "token_revoked") {
           slack.deleteMessage(payload.response_url);

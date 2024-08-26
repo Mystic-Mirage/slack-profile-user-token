@@ -182,6 +182,7 @@ class Slack {
    * Revoke a token
    *
    * @param {string} token
+   * @returns {{revoked?: boolean, error?: string}}
    */
   authRevoke(token) {
     return this.postApi("auth.revoke", {token: token}, false);
