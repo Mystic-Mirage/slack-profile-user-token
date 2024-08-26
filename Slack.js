@@ -321,7 +321,7 @@ class Slack {
           "type": "section",
           "text": {
             "type": "plain_text",
-            "text": "Slack API allows only a single user token per permission scope for an application, so multiple access requests do nothing but return the same token every time. To change the token, revoke it first and then re-authorize the app"
+            "text": "Slack API allows only a single user token per permission scope for an application, so multiple access requests do nothing but return the same token every time. To change the token, revoke it first and then re-authorize the app again"
           }
         },
         {
