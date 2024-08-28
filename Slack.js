@@ -77,7 +77,6 @@ class Slack {
    * @param {string} path
    * @param {{[p: string]: any}} data
    * @param {boolean} [json=true]
-   * @yields {{id: string, user: string}}
    */
   postApi(path, data, json = true) {
     const url = this.apiUrl(path);
