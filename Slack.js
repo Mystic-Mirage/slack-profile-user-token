@@ -257,7 +257,7 @@ class Slack {
           "type": "section",
           "text": {
             "type": "plain_text",
-            "text": "Push the green button, get your token, and update your Slack status using cURL"
+            "text": "Push the green button, get your token, and update your Slack status using cURL:"
           }
         },
         {
