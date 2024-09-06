@@ -264,7 +264,7 @@ class Slack {
           "type": "section",
           "text": {
             "type": "mrkdwn",
-            "text": "```curl -H \"Authorization: Bearer <YOUR_TOKEN>\" -H \"Content-Type: application/json; charset=utf-8\" -d '{\"profile\": {\"status_emoji\": \":robot_face:\", \"status_text\": \"I'\\''m a robot\"}}' https://slack.com/api/users.profile.set```"
+            "text": "```curl -H \"Authorization: Bearer ${TOKEN}\" -H \"Content-Type: application/json; charset=utf-8\" -d '{\"profile\": {\"status_emoji\": \":robot_face:\", \"status_text\": \"I'\\''m a robot\"}}' https://slack.com/api/users.profile.set```"
           }
         },
         {
